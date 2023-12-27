@@ -1,0 +1,33 @@
+POST http://localhost:5000/.netlify/functions/api/user
+Content-Type: application/json
+
+{
+    "nama" : "Daffa Rhauda",
+    "nim": "1217050029",
+    "jurusan":"T Informatika",
+    "fakultas" : "Sains Tekonologi",
+    "alamat" : "Bandung",
+    "universitas":"UIN BDG",
+    "email" :"daff@gmail.com"
+}
+###
+GET http://localhost:5000/.netlify/functions/api/user
+###
+PATCH http://localhost:5000/.netlify/functions/api/user/658a45aec34d99088138cbf7
+Content-Type: application/json
+
+{
+    "name" : "Daffa Rhauda",
+    "nim": "1217050029",
+    "jurusan":"Teknik Informatika",
+    "fakultas" : "Sains Tekonologi",
+    "alamat" : "Bandung",
+    "universitas":"UIN BDG",
+    "email" :"daff@gmail.com"
+}
+
+###
+DELETE http://localhost:5000/.netlify/functions/api/user/.netlify/functions/api/user/6587f01ee6893742e66f3c72
+
+###
+GET http://localhost:5000/.netlify/functions/api/user/.netlify/functions/api/user/6587e5887b4cf1a9fc25d1d5
